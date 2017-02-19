@@ -1,0 +1,184 @@
+@font-face {
+	font-family: 'Brandon';
+	src: url('./fonts/Brandon_reg.otf');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Brandon';
+	src: url('./fonts/Brandon_med.otf');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Brandon';
+	src: url('./fonts/Brandon_thin.otf');
+	font-weight: 100;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Brandon', Arial;
+	margin: 0;
+	font-size: 18px;
+	color: #333;
+}
+
+h1 {
+	font-size: 6rem;
+	font-weight: normal;
+	margin: 0;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 3rem;     /*rem 相对body fontsize*/
+	font-weight: normal; /*字体粗细*/
+	margin: 0;
+}
+
+nav{
+	margin-top: 10px;
+}
+
+.container {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.bg-img {
+	position: fixed;
+	top: 0;  /*stick on topof view point*/
+	width: 100%;
+	height: 100%;
+	z-index: -1; /*渲染次序 默认0 强行-1 最后渲染*/
+}
+
+.brand {
+	width:20%;
+}
+
+.brand img {  /* 在brand下面的所有img*/
+    width: 100px;
+}
+
+.brand,
+.tabs {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.circle {
+	border-radius : 50%;
+}
+
+.tabs{
+	width: 80%;
+	text-align: right;
+}
+
+.tabs ul {
+	list-style: none;   /*去掉 ··*/	
+}
+
+.tabs ul > li {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.tabs ul > li > a {
+	font-size: 1.5rem;
+	padding: 20px;
+	transition: color 0.5s ease;
+}
+
+.tabs ul > li > a:hover{
+	color: #fff;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.body-content {
+	margin-top: 80px;
+}
+
+.row {
+	width: 100%;
+	margin: 50px;
+}
+a {
+	text-decoration: none;
+	color: #d84f4a;
+}
+
+footer h3{
+	background-color: #333;
+	color: #fff;
+	margin: 0;
+	padding: 15px 0;   /*上下15px 左右0*/
+	font-weight: 100;
+	font-size: 18px;
+}
+
+.contact-form{
+	max-width: 400px;
+	margin-left: auto;
+	margin-right: auto; 
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+	width: 100%;
+	font-size: 1.5rem;
+	border-radius: 10px;
+	border: 1px solid #b2b2b2 ;  /*width style color*/
+	padding: 10px;
+	background-color: #f0f0f0;
+	margin-bottom: 1rem;
+}
+.contact-form button{
+	background-color: #43B3FF;
+	color: white;
+	border-color: #3680b2;
+	cursor: pointer;
+	margin-bottom: 4rem;
+	transition: background-color 0.5s ease;
+}
+
+.contact-form button:hover{
+	background-color: #B6E2F6;
+}
+
+.work-img{
+    width: 50%;
+}
+
+.float-left{
+	width: 50%;
+	float: left;
+}
+
+.float-right{
+	width: 50%;
+	float: right;
+}
+
+img {
+	/*display: block;*/
+	width: 100%;
+}
+
+.clearfix:after {
+	display: block;
+	content: '  ' ;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
